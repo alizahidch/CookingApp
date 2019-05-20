@@ -1,18 +1,13 @@
-<app-header></app-header>
+<app-header (featureSelected)=' displayCounter($event)' ></app-header>
 <div class="container">
-    <ol class="breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Library</a></li>
-        <li class="active">Data</li>
-      </ol>
+   <div class="row">
 
-    <div class="jumbotron">
-        <h1>Hello, world!</h1>
-        <p>...</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-      </div>
+    <div class="col-md-12">
+            <!-- <app-shopping-list *ngIf="loadedFeature === 'shopping-list'" ></app-shopping-list>
+<app-recipes *ngIf="loadedFeature === 'recipe'" ></app-recipes> -->
 <app-recipes></app-recipes>
 <app-shopping-list></app-shopping-list>
 
-
+</div>
+</div>
 </div>
