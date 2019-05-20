@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Cookingapp';
+loadedFeature;
+
+ngOnInit() {
+  this.loadedFeature='recipe';
+}
+onNavigate(feature:string){
+    console.log(feature);
+this.loadedFeature=feature;
+  }
+
+  displayCounter(count) {
+    console.log(count);
+    this.loadedFeature=count;
+}
 }
