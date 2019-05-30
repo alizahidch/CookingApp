@@ -14,5 +14,10 @@ ingredients:Ingridient[]=[
 
   ngOnInit() {
   }
+  onIngridientAdded(ingridient:Ingridient){
+    this.ingredients.push(ingridient)
+
+  }
+  
 
 }
