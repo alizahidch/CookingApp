@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {Recipe} from '../recipe.model'
+import {Recipe} from '../recipe.model';
+import { Injectable, Type } from '@angular/core';
+
 @Component({
   selector: 'app-recipe-detail',
   templateUrl: './recipe-detail.component.html',
