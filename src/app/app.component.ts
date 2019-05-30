@@ -17,6 +17,9 @@ onNavigate(feature:string){
 this.loadedFeature=feature;
   }
 
+
+
+
   displayCounter(count) {
     console.log(count);
     this.loadedFeature=count;
